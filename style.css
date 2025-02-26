@@ -1,0 +1,134 @@
+*{
+    /* PLEASE BE MINDFULL THAT EVERYTHING CAN BE ADJUSTED */
+    /* REM is short for measurement */
+        margin:0;
+        padding:0; /*space inside the elements */
+        box-sizing:border-box;
+        font-family:"poppins",sans-serif; /* THE FONT THAT WE ARE CURRENTLY USING */
+    }
+    body{
+        background-color: #17b832;
+        background:linear-gradient(to right,#e2e2e2,#04682a) 
+        /* COLOR CAN BE CHANGED */
+    }
+    .container{ /* BIG BOX IS BROKEN */
+        background:#fff; /* COLOR CAN BE CHANGED REGISTER BIG BOX */
+        width:450px; /* PROBLEM */
+        padding:1.5rem; /* PROBLEM */
+        margin:50px auto; /* PROBLEM */
+        border-radius:10px;
+        box-shadow:0 20px 35px rgba(0,0,1,0.9) /* SHADOW CAN BE ADJUSTED */
+    }
+    form{ 
+        margin:0 2rem;
+    }
+    .form-title{ /* TITLE ADJUSTMENTS */
+        font-size:1.5rem;
+        font-weight:bold;
+        text-align:center;
+        padding:1.3rem;
+        margin-bottom:0.4rem;
+    }
+    input{
+        color:inherit;
+        width:100%;
+        background-color:transparent;
+        border:none;
+        border-bottom:1px solid #000000;
+        padding-left:1.5rem;
+        font-size:15px;
+    }
+    .input-group{ /* SPACING IN ALL INCLUDING THE BOXES */
+        padding:1% 0; /* ADJUSTABLE */
+        position:relative;
+    }
+    .input-group i{ /* COLOR OF CURRENTLY FOCUSING */
+        position:absolute; /* CAN ALSO BE CHANGED TO RELAVTIVE */
+        color:black;
+    }
+    input:focus{ /* WHEN YOU POINT YOUR MOUSE OR TYPING TOWARDS THE BOX */
+        background-color:transparent;
+        outline:transparent;
+        border-bottom:2px solid hsl(145, 97%, 24%) /* COLOR ONCE THE BOX BEING USED */
+    }
+    input::placeholder{
+        color:transparent;
+    }
+    label{ /* COLORS OF ALL THE LABELS */
+        color:rgb(116, 109, 109);
+        position:relative;
+        left:1.2em;
+        top:-1.3em;
+        cursor:auto;
+        transition:0.3s ease all;
+    }
+    input:focus~label,input:not(:placeholder-shown)~label{
+        top:-3em;
+        color:hsl(327,90%,28%);
+        font-size:15px;
+    }
+    .recover{
+        text-align:right;
+        font-size:1rem;
+        margin-bottom:1rem;
+    }
+    .recover a{
+        text-decoration:none;
+        color:rgb(2, 92, 22);
+    }
+    .btn{
+        font-size:1.1rem;
+        padding:8px 0;
+        border-radius:5px;
+        outline:none;
+        border:none;
+        width:100%;
+        background:rgb(31, 143, 8); /* COLOR OF THE BUTTON */
+        color:white; /* COLOR WHEN PRESSED */
+        cursor:pointer;
+        transition:0.9s;
+    }
+    .btn:hover{ /* COLOR WHEN YOU HOVER YOUR MOUSE TO THE BUTTON */
+        background:#000000;
+    }
+    .or{
+        font-size:1.1rem;
+        margin-top:0.5rem;
+        text-align:center;
+    }
+    .icons{ /* GOOGLE AND FB ICONS ALIGNMENT */
+        text-align:center;
+    }
+    .icons i{
+        color:#09dd26; /* ICON COLOR */
+        padding:0.8rem 1.5rem;
+        border-radius:10px;
+        font-size:1.5rem;
+        cursor:pointer;
+        border:2px solid #1e0661; /* ICON BORDER COLOR */
+        margin:0 15px;
+        transition:1s;
+    }
+    .icons i:hover{
+        background: #000000;
+        font-size:1.6rem;
+        border:2px solid rgb(14, 14, 173); /* COLOR WHEN HOVER */
+    }
+    .links{
+        display:flex;
+        justify-content:space-around;
+        padding:0 4rem;
+        margin-top:0.9rem;
+        font-weight:bold;
+    }
+    button{ /* BUTTON INFO IN SIGN UPS AND INS */
+        color:rgb(0, 141, 7);
+        border:none;
+        background-color:transparent;
+        font-size:1rem;
+        font-weight:bold;
+    }
+    button:hover{
+        text-decoration:underline;
+        color:blue;
+    }
